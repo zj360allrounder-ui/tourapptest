@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Be Vietnam Pro", sans-serif;
+
+  --color-primary: #a14200;
+  --color-primary-dim: #8d3900;
+  --color-primary-container: #ffae86;
+  --color-on-primary: #fff7f5;
+  
+  --color-secondary: #3e637e;
+  --color-secondary-dim: #315772;
+  --color-secondary-container: #cae6ff;
+  --color-on-secondary-container: #305570;
+
+  --color-tertiary: #00687f;
+  --color-tertiary-container: #5bd8fe;
+  --color-on-tertiary-container: #00485a;
+
+  --color-surface: #f8f9fa;
+  --color-surface-bright: #f8f9fa;
+  --color-surface-container-low: #f2f4f5;
+  --color-surface-container: #ebeef0;
+  --color-surface-container-high: #e5e9eb;
+  --color-surface-container-highest: #dee3e5;
+  --color-surface-container-lowest: #ffffff;
+
+  --color-on-surface: #2e3335;
+  --color-on-surface-variant: #5a6062;
+  --color-outline: #767c7e;
+  --color-outline-variant: #aeb3b5;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body antialiased;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.glass {
+  @apply bg-white/70 backdrop-blur-md;
+}

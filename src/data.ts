@@ -1,0 +1,96 @@
+import { Destination, Category } from './types';
+
+export const CATEGORIES: Category[] = [
+  { id: 'mountain', title: 'Mountain', icon: 'Mountain', color: 'bg-primary' },
+  { id: 'beach', title: 'Beach', icon: 'Palmtree', color: 'bg-surface-container-high' },
+  { id: 'cultural', title: 'Cultural', icon: 'Landmark', color: 'bg-surface-container-high' },
+  { id: 'forest', title: 'Forest', icon: 'Trees', color: 'bg-surface-container-high' },
+  { id: 'desert', title: 'Desert', icon: 'Sun', color: 'bg-surface-container-high' },
+  { id: 'active', title: 'Active', icon: 'Waves', color: 'bg-surface-container-high' },
+];
+
+export const DESTINATIONS: Destination[] = [
+  {
+    id: 'amalfi',
+    title: 'Amalfi Coastline',
+    location: 'Italy',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBbJL5QBJOxHSKzLeg8njECiZwzRa1xbJuK4k0X_5cYiZYTa2MS7d1rN1aoxzgpVuHILakNPL5tNL0TLrkcq3i11dskUqVHqKpLmZOk7FcaiBqKve_rwT8zj-YLrk_cbwnRPtfe8LF48hGUHzHN5QhmnFzGyu76O-O1fFpEBDaTQUQTddWfB07YKublrBPm12AwJKze7XXC4Urb1lUQs6rmpQ_diLsrsRoyKm7A2CmXcRTHPvCoyYHJeiiq2VkOKKc00zvNajmrUdQ',
+    tag: 'Featured',
+    description: 'A coastal paradise with turquoise bays and golden sunsets.',
+  },
+  {
+    id: 'santorini',
+    title: 'Oia Heights',
+    location: 'Greece',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD2RgOwgSCkBJZrIWw5ImrgICUMH7S5Em4FJIv9oYTv4Dp1n8Vmrk3d57O8xYFCSkduuG1oKFKsFuBdqqeh3Ocl9f2TOLPHeOPyDbHZdH-aVsE2mGZoeoGaI_a7u-8KDMkOi0FMJOE5emnPAz6lh0pZ0R3wWRrI-2aYX-W3t9wteS0TbB1Z5827O9j8_dUpv4EieTAFzwctnnK9f9e0d-OJkf-LyakMDlxze7c9xedOtK00Rl7Gwi8Y3BozJwu1I10wEGyqhtkIcnM',
+    tag: 'Hiking Adventure',
+    rating: 4.9,
+    reviews: 128,
+    price: 1200,
+  },
+  {
+    id: 'agra',
+    title: 'Marble Echoes',
+    location: 'Agra, India',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB1BQvBruijlyiadGFiguFlD1KHfK811xkR0lMVFKNc6-e2RLn3eoGlrIG7FB3PssamIiTqfd7x-8a8-SvXLB8Eh-RH_yTHV4XNa_iiCRIUIZJIBA7lrswbEwsdQRuJ7TGxTNXE52BgRgbLOXXpx5wVU__olXxjQ_ERK6CmShRKUPvQFu0Y0q-zCeBq5Dmgk1k8g4x3BcYnPmdvupeRYp71rrklRFsOJzpG9dupnpL7olaqFAd4I03Bw3rMzCh91sgUEZkEtC2u5sM',
+    tag: 'Cultural Discovery',
+  },
+  {
+    id: 'yosemite',
+    title: 'Serenity in the Sierra High Valleys',
+    location: 'USA',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCTaFFdVz3VCNcxTNcTsjrbb1y40c28gdOneaWZeLplHW0GupuyHGX7ObAUFoqv2Tv9knCEYNYiTQP2U4Mc_dWQmVRy9OMld1fjPj5GWOqW6j_It4D1rLyH4S_IZQ6lkDtBIwQ-uc4Z5Wj5YUAleE36ZBT5lJB3OxADWjUgpH5KhZfwVzFZIhCsIKyZYjqjCL8KUROPxiwvrTNp8Uikfy73XEJ2ixlKoKwt9f9tat-a4TnunQ3zC2FFB1j8PlUPWAQXr4oFwAr6Swo',
+    tag: 'Editor\'s Pick',
+    duration: '5 Days, 4 Nights',
+    intensity: 'Moderate Trek',
+    groupSize: 'Max 8 People',
+    price: 2450,
+    oldPrice: 2450,
+    description: 'Traverse the ancient pathways of the High Sierras, where the air is thin and the horizons are infinite. This curated editorial journey takes you beyond the tourist maps into the heart of the granite giants.',
+    itinerary: [
+      {
+        day: 1,
+        title: 'Arrival & Granite Gateway',
+        description: 'Touchdown in the valley and meet your crew. We\'ll head straight to the lower basin for a sunset orientation and a welcome fire under the stars.',
+        meals: ['LUNCH', 'DINNER'],
+      },
+      {
+        day: 2,
+        title: 'The Ascent to Cloud Rest',
+        description: 'A steady 8-mile trek through pine corridors leading to our first high-altitude camp. This is where the landscape truly opens up.',
+      },
+      {
+        day: 3,
+        title: 'Mirror Lakes & Ridge Yoga',
+        description: 'A day of restoration. Reflective waters and optional morning movement sessions on the ridge overlooking the basin.',
+      },
+    ],
+  },
+  {
+    id: 'patagonia',
+    title: 'Patagonia Traverse',
+    location: 'Argentina',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBx17neYb4OjYWqx88rZqQN3l09GKC0KsqsJVb8q4QUGrwTuvWZQ3Q5VOpu-wcWwKF5kThpRHshiJq9DiNFwShjRlhXHIX1RIA6sTDAtpSO4wGFJMJ4FMD82aOwcEOmiHsuEm5f12kXRgxDTys2VMBEFeumjHN82n-c0EiFw7XOSjplj0_huHMS1KM_snzCYghMQmsQZdVCNNN3C2IL6SuZq_QGEOnYnT54Wp4cQ4IGIz0QJRNEqP6IAvKT3OZq3VzCX1OnslFaTts',
+    tag: 'Best Seller',
+    price: 1890,
+    oldPrice: 2450,
+  },
+  {
+    id: 'swiss',
+    title: 'Swiss Peaks Adventure',
+    location: 'Switzerland',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCaGH_74qxw46AEvGRB4Zb15ZPzjVti0rqOy5rH-NikVrzC8V2UhVgMvDvvQfabPZhAZOh5JL8KVk9YX1RSrcmCs11A1WIiB0IVJE5DSF-K5a4ndHCGG5BeMgECAxfSMxs3dC0Vp6zbEwAfxv8qZjU1r9oboO-rYRZRe1rQxCP7ZfgroQxPu_i1pQQlc502Dydve7IFSuqcumcNsk6gnLeUXrUiTTWMtctpoRGNjSqHH0UsY7uoGjb0VEUOT-xk88dUj2zTOxxyi9c',
+    rating: 4.8,
+    reviews: 94,
+    price: 3450,
+  },
+  {
+    id: 'venice',
+    title: 'Venetian Art & History',
+    location: 'Italy',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB65G6fPWIZnKILw8hB6-h512Lpzr_VOLX_jqEl4V99iE0fJeGahcsJMyGLLTot_jaGYR4vPWcyQ16QoA3aY6AojkfxbVyM31JENfgQxbGJAi9Xi38BD8uCNmCtH8J3F9JpuNFNvf24Nl1QJs5orjyOhRKF_j4CiH8AfhRhxSA7_EcucXO95aoEkPNzd_hCCUTVg1RY-LhMqXnMVsIpelSgq4d734C_JF5XYOlApMUdvbSeFe1Ra2QT8TIHmuXYE6ycfmmYB4NyZPk',
+    rating: 4.7,
+    reviews: 210,
+    price: 1650,
+  },
+];
